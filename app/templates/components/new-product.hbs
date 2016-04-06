@@ -1,0 +1,14 @@
+{{#if isSelected}}
+  <form>
+    <label for="name">Name</label>
+    {{input value=name}}
+    <label for="name">description</label>
+    {{input value=description}}
+    <label for="name">price</label>
+    {{input value=price}}
+  </form>
+  <button {{action 'submitProduct'}}>Submit</button>
+  <button {{action 'showForm'}}>undo</button>
+{{else}}
+  <button {{action 'showForm'}}>New Product</button>
+{{/if}}
