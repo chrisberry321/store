@@ -1,5 +1,7 @@
-{{#each topSellers as |seller|}}
+<div class="sellerInfo">
+  {{#each topSellers as |seller|}}
   {{#link-to 'seller' seller.id}}
-    <h3>{{seller.name}} | {{seller.feedback}}%</h3>
+  <h3>{{seller.name}} | {{seller.feedback}}%</h3>
   {{/link-to}}
-{{/each}}
+  {{/each}}
+</div>

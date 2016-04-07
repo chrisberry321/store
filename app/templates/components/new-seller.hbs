@@ -1,10 +1,12 @@
-{{#if isSelected}}
+<div class="sellerForm">
+  {{#if isSelected}}
   <form>
     <label for="name">Name</label>
     {{input value=name}}
   </form>
   <button {{action 'submitSeller'}}>Submit</button>
   <button {{action 'showForm'}}>undo</button>
-{{else}}
+  {{else}}
   <button {{action 'showForm'}}>New Seller</button>
-{{/if}}
+  {{/if}}
+</div>

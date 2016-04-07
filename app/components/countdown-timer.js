@@ -18,6 +18,7 @@ export default Ember.Component.extend({
       }
       running();
   },
+  counter: 0,
   timer: Ember.computed('counter.@each', function() {
     return this.get('counter');
   })
