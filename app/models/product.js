@@ -6,5 +6,6 @@ export default DS.Model.extend({
   price: DS.attr(),
   image: DS.attr(),
   seller: DS.belongsTo('seller', {async: true}),
-  date: DS.attr()
+  date: DS.attr(),
+  expireDate: DS.attr()
 });

@@ -1,0 +1,5 @@
+{{#each shoppingCart.items as |product|}}
+<li>{{product.name}} {{product.price}}
+  <button class="removeCartItem" {{action 'removeCartItem' product}}>Remove from cart</button>
+</li>
+{{/each}}

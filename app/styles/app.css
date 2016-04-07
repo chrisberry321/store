@@ -1,14 +1,22 @@
+.homepage {
+height: 100vh;
+background-image: url("https://static.pexels.com/photos/7976/pexels-photo.jpg");
+background-size: cover;
+}
+
 .nav {
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  /*background-color: oldlace;*/
+  background-color:rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px #444444;
 }
 #title{
   flex: 2;
   margin-left: 8px;
 }
 .nav h3 {
-  margin-left: 8vw;
+  margin-left:6vw;
 }
 .seller {
   /*background-color: oldlace;*/

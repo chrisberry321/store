@@ -9,17 +9,21 @@ export default Ember.Component.extend({
     },
     submitProduct(){
       var random = Math.floor(Math.random()*100);
+      var date = new Date();
+      var hours = date.getHours() + 3;
+      var expireDate = new Date();
+      expireDate.setHours(hours);
       var params = {
         name: this.get('name')? this.get('name'): 'product ' + random,
         price: random,
         image: 'http://lorempixel.com/400/200/',
         description: 'bestProductEVER ' + random,
         seller: this.get('seller'),
-        date: new Date()
+        date: date,
+        expireDate: expireDate
       };
       this.set('name', '');
       this.set('isSelected', false);
-      console.log(params);
       this.sendAction('sendProduct', params);
     }
   }
