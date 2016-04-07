@@ -11,6 +11,11 @@ export default Ember.Route.extend({
     actions: {
       addToCart(item) {
         this.get('shoppingCart').add(item);
+      },
+      delete(params){
+        console.log(params);
+        params.item.destroyRecord();
+        this.transitionTo('index');
       }
     }
 });

@@ -15,7 +15,7 @@ export default Ember.Component.extend({
       expireDate.setHours(hours);
       var params = {
         name: this.get('name')? this.get('name'): 'product ' + random,
-        price: random,
+        price: parseInt(this.get('price'))? parseInt(this.get('price')): random,
         image: 'http://lorempixel.com/400/200/',
         description: 'bestProductEVER ' + random,
         seller: this.get('seller'),

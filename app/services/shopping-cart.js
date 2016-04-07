@@ -5,7 +5,7 @@ export default Ember.Service.extend({
   total: Ember.computed('items.[]', function(){
     var total = 0;
     this.get('items').forEach(function(item){
-      total += item.get('price');
+      total += parseInt(item.get('price'));
     });
     return total;
   }),

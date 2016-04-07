@@ -2,8 +2,7 @@
 <div class="product">
   <h2>{{model.product.name}}</h2>
   <h3>Added on: {{date-helper model.product.date}}</h3>
-  <h4>expireDate: {{model.product.expireDate}}</h4>
-  {{countdown-timer expireDate=model.product.expireDate}}
+  {{countdown-timer expireDate=model.product.expireDate product=model.product deleteProduct="delete"}}
   <h4>{{model.product.description}}</h4>
   <img src="{{model.product.image}}" alt="dont know" />
   <h4>Price: ${{model.product.price}}</h4>

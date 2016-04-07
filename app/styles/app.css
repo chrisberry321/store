@@ -3,10 +3,11 @@ height: 115vh;
 width: 100vw;
 background-image: url("https://static.pexels.com/photos/7976/pexels-photo.jpg");
 background-size: cover;
+
 }
 
 .nav {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   display: flex;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.1);
@@ -31,6 +32,7 @@ background-size: cover;
   border-radius: 15px;
   box-shadow: 5px 5px 4px #777777;
   padding: 12px;
+  margin-top: 20vh;
 
 }
 .cart {
@@ -47,6 +49,7 @@ background-size: cover;
   transition-delay: 1s;
   transform: scale(1.5);
 }*/
+
 .sellerInfo {
   display: flex;
   justify-content: space-between;
@@ -54,11 +57,11 @@ background-size: cover;
   margin-top: 10vh;
 }
 .sellerInfo h3{
-  width: 200px;
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding-top: 25px;
   box-shadow: 5px 5px 4px #444444;
   color: white;
 }
@@ -66,7 +69,11 @@ background-size: cover;
 .seller img{
   border-radius: 5px;
   margin: 10px;
-
+  box-shadow: 5px 5px 4px #777777;
+}
+.seller h1 {
+  color: white;
+  font-family: sans-serif;
 }
 .sellerForm {
   display: flex;
@@ -76,22 +83,53 @@ background-size: cover;
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 3px;
-  margin: 0 10px;
+  margin: 20px 0 0 40px;
 }
-.sellerProductList {
+.sellerProductList a:hover {
+  transition: all 1s;
+  transform: scale(1.05);
 
 }
 .ember-view {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .ember-view::after{
-  display: inline-block;
+  /*display: inline-block;*/
 }
 .product-tile {
-  width: 40vw;
-  /*display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;*/
+  flex: 1 1 100%;
+  text-align: center;
+}
+.product-tile h2 {
+  margin-bottom: 1px;
+}
+.newProduct {
+  margin: 18px 0 0 44px;
+  background-color: white;
+  border: none;
+  box-shadow: 5px 5px 4px #333333;
+}
+.newProduct:hover {
+  background-color: #179CAF;
+}
+.ember-view li{
+  width: 100%;
+  display: inline-block;
+  padding: 6px;
+}
+.removeCartItem {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  margin-left: 10px;
+}
+.removeCartItem:hover {
+  background-color: #EFBB5E;
+}
+.newProductForm {
+  background-color: lime;
+  
+  }
 }

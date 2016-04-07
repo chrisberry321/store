@@ -1,5 +1,5 @@
 {{#if isSelected}}
-  <form>
+  <form class="newProductForm">
     <label for="name">Name</label>
     {{input value=name}}
     <label for="name">description</label>
@@ -10,5 +10,5 @@
   <button {{action 'submitProduct'}}>Submit</button>
   <button {{action 'showForm'}}>undo</button>
 {{else}}
-  <button {{action 'showForm'}}>New Product</button>
+  <button class="newProduct"{{action 'showForm'}}>New Product</button>
 {{/if}}
