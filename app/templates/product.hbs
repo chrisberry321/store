@@ -1,0 +1,10 @@
+
+<div class="product">
+  <h2>{{model.product.name}}</h2>
+  <h3>Added on: {{date-helper model.product.date}}</h3>
+  {{countdown-timer model.product.date}}
+  <h4>{{model.product.description}}</h4>
+  <img src="{{model.product.image}}" alt="dont know" />
+  <h4>Price: ${{model.product.price}}</h4>
+  <button class="cart" {{action 'addToCart' product}}>Add to Cart</button>
+</div>

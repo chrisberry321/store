@@ -1,4 +1,9 @@
 {{#each products as |product|}}
-<h2> {{product.name}}</h2>
- <img src="{{product.image}}" alt="random" />
+{{#link-to 'product' product.id}}
+<div class="container">
+  <h2> {{product.name}}</h2>
+  <img src="{{product.image}}" alt="random" />
+</div>
+{{/link-to}}
+
  {{/each}}

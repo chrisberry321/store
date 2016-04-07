@@ -1,5 +1,8 @@
-<h1>{{model.seller.name}}</h1>
-<h2>{{model.seller.description}}</h2>
-<h3>{{model.seller.feedback}}</h3>
-{{new-product sendProduct="saveProduct" seller=model.seller}}
-{{product-list products=model.seller.products}}
+<div class="seller">
+  <h1>{{model.seller.name}}</h1>
+  <h2>{{model.seller.description}}</h2>
+  <h3>{{model.seller.feedback}}</h3>
+  <img src="{{model.seller.image}}" alt="" />
+  {{new-product sendProduct="saveProduct" seller=model.seller}}
+  {{product-list products=model.seller.products}}
+</div>

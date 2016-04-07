@@ -2,8 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params){
-    console.log(params)
-    return Ember.RSVP.hash({
+      return Ember.RSVP.hash({
       seller: this.store.findRecord('seller', params.seller_id)
     });
   },

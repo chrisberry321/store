@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   isSelected: false,
@@ -13,10 +14,12 @@ export default Ember.Component.extend({
         price: random,
         image: 'http://lorempixel.com/400/200/',
         description: 'bestProductEVER ' + random,
-        seller: this.get('seller')
+        seller: this.get('seller'),
+        date: new Date()
       };
       this.set('name', '');
       this.set('isSelected', false);
+      console.log(params);
       this.sendAction('sendProduct', params);
     }
   }
