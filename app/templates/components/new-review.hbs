@@ -1,0 +1,14 @@
+{{#if isSelected}}
+  <form class="newReviewForm">
+    <label for="author">Author</label>
+    {{input value=author}}
+    <label for="text">text</label>
+    {{input value=text}}
+    <label for="rating">rating</label>
+    {{input value=rating}}
+  </form>
+  <button {{action 'submitReview'}}>Submit</button>
+  <button {{action 'showForm'}}>undo</button>
+{{else}}
+  <button class="newReview"{{action 'showForm'}}>New Review</button>
+{{/if}}

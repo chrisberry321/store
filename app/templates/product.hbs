@@ -7,4 +7,8 @@
   <img src="{{model.product.image}}" alt="dont know" />
   <h4>Price: ${{model.product.price}}</h4>
   <button class="cart" {{action 'addToCart' model.product}}>Add to Cart</button>
+  {{new-review newReview="addReview" product=model.product }}
+  {{review-list reviews=model.product.reviews}}
+
+<!-- {{new-review sendReview="saveReview" product=model.product}} -->
 </div>

@@ -1,0 +1,21 @@
+{{#each review as |review|}}
+  {{#link-to 'review' review.id}}
+  {{review.author}}
+  {{/link-to}}
+{{/each}}
+
+
+
+
+
+
+
+{{#each products as |product|}}
+{{#link-to 'product' product.id}}
+<div class="product-tile">
+  <h2> {{product.name}}</h2>
+  <img src="{{product.image}}" alt="random" />
+</div>
+{{/link-to}}
+
+ {{/each}}
